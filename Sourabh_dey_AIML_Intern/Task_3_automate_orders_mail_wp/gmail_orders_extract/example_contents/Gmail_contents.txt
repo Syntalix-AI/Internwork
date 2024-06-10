@@ -1,0 +1,427 @@
+subject: Orders for Onion and Apple
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:02:58 +0530
+body: 
+I need 4kg apple, 3kg onion, 5kg Mangoes and I will do the payment through
+Credit card, or Debit card, whichever you prefer
+
+-------------------------------
+subject: Orders for me
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:01:17 +0530
+body: 
+3kg onion, 4kg Onion, 6kg Apple, 20kg mango
+Credit card
+
+-------------------------------
+subject: Demo message
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 16:49:48 +0530
+body: 
+This is an example order
+4kg Onion
+5Kg Potato
+1kg Daal
+CASH ON DELIVERY
+Fast chahiye
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:06:01 +0530
+body: 
+Without subject
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:05:47 +0530
+body: 
+Order order oder
+
+-------------------------------
+subject: Orders for the month
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 20:11:04 +0530
+body: 
+4kg mango, 6kg Potato, 7kg Brinjal, 9kg onion
+Debit card payment
+
+-------------------------------
+subject: Barir Order korbo
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:07:10 +0530
+body: 
+Amake 5 kilo aam, 6 kilo Apple, 7 kilo Aalo lagbe aar ami Taka die debo
+
+-------------------------------
+subject: Ghar ke samagri
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:05:33 +0530
+body: 
+Mujhe 1kg Gajar, 2kg Muli chahiye, mai Card payment krunga
+
+-------------------------------
+subject: Ghar ka order
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:04:39 +0530
+body: 
+Mujhe 3kg pyaaz, 5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela chahiye or
+mai CASH payment krunga
+
+-------------------------------
+subject: 
+from: Sourabh Dey <uhddey@gmail.com>
+date: Wed, 22 Nov 2023 11:10:54 +0530
+body: 
+Hi bro
+
+-------------------------------
+subject: Orders for Onion and Apple
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:02:58 +0530
+body: 
+I need 4kg apple, 3kg onion, 5kg Mangoes and I will do the payment through
+Credit card, or Debit card, whichever you prefer
+
+-------------------------------
+subject: Orders for me
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:01:17 +0530
+body: 
+3kg onion, 4kg Onion, 6kg Apple, 20kg mango
+Credit card
+
+-------------------------------
+subject: Demo message
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 16:49:48 +0530
+body: 
+This is an example order
+4kg Onion
+5Kg Potato
+1kg Daal
+CASH ON DELIVERY
+Fast chahiye
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:06:01 +0530
+body: 
+Without subject
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:05:47 +0530
+body: 
+Order order oder
+
+-------------------------------
+subject: Orders for the month
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 20:11:04 +0530
+body: 
+4kg mango, 6kg Potato, 7kg Brinjal, 9kg onion
+Debit card payment
+
+-------------------------------
+subject: Weekly orders
+from: Sourabh Dey <uhddey@gmail.com>
+date: Mon, 10 Jun 2024 10:17:38 +0530
+body: 
+I need one kg of potato, 2 kg of mangoes, 6 kg of bananas, 7kg of Lemon
+Will do cash on delivery
+
+-------------------------------
+subject: Barir Order korbo
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:07:10 +0530
+body: 
+Amake 5 kilo aam, 6 kilo Apple, 7 kilo Aalo lagbe aar ami Taka die debo
+
+-------------------------------
+subject: Ghar ke samagri
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:05:33 +0530
+body: 
+Mujhe 1kg Gajar, 2kg Muli chahiye, mai Card payment krunga
+
+-------------------------------
+subject: Ghar ka order
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:04:39 +0530
+body: 
+Mujhe 3kg pyaaz, 5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela chahiye or
+mai CASH payment krunga
+
+-------------------------------
+subject: 
+from: Sourabh Dey <uhddey@gmail.com>
+date: Wed, 22 Nov 2023 11:10:54 +0530
+body: 
+Hi bro
+
+-------------------------------
+subject: Orders for Onion and Apple
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:02:58 +0530
+body: 
+I need 4kg apple, 3kg onion, 5kg Mangoes and I will do the payment through
+Credit card, or Debit card, whichever you prefer
+
+-------------------------------
+subject: Orders for me
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:01:17 +0530
+body: 
+3kg onion, 4kg Onion, 6kg Apple, 20kg mango
+Credit card
+
+-------------------------------
+subject: Demo message
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 16:49:48 +0530
+body: 
+This is an example order
+4kg Onion
+5Kg Potato
+1kg Daal
+CASH ON DELIVERY
+Fast chahiye
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:06:01 +0530
+body: 
+Without subject
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:05:47 +0530
+body: 
+Order order oder
+
+-------------------------------
+subject: Orders for the month
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 20:11:04 +0530
+body: 
+4kg mango, 6kg Potato, 7kg Brinjal, 9kg onion
+Debit card payment
+
+-------------------------------
+subject: Weekly orders
+from: Sourabh Dey <uhddey@gmail.com>
+date: Mon, 10 Jun 2024 10:17:38 +0530
+body: 
+I need one kg of potato, 2 kg of mangoes, 6 kg of bananas, 7kg of Lemon
+Will do cash on delivery
+
+-------------------------------
+subject: Barir Order korbo
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:07:10 +0530
+body: 
+Amake 5 kilo aam, 6 kilo Apple, 7 kilo Aalo lagbe aar ami Taka die debo
+
+-------------------------------
+subject: Ghar ke samagri
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:05:33 +0530
+body: 
+Mujhe 1kg Gajar, 2kg Muli chahiye, mai Card payment krunga
+
+-------------------------------
+subject: Ghar ka order
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:04:39 +0530
+body: 
+Mujhe 3kg pyaaz, 5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela chahiye or
+mai CASH payment krunga
+
+-------------------------------
+subject: 
+from: Sourabh Dey <uhddey@gmail.com>
+date: Wed, 22 Nov 2023 11:10:54 +0530
+body: 
+Hi bro
+
+-------------------------------
+subject: Orders for Onion and Apple
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:02:58 +0530
+body: 
+I need 4kg apple, 3kg onion, 5kg Mangoes and I will do the payment through
+Credit card, or Debit card, whichever you prefer
+
+-------------------------------
+subject: Orders for me
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:01:17 +0530
+body: 
+3kg onion, 4kg Onion, 6kg Apple, 20kg mango
+Credit card
+
+-------------------------------
+subject: Demo message
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 16:49:48 +0530
+body: 
+This is an example order
+4kg Onion
+5Kg Potato
+1kg Daal
+CASH ON DELIVERY
+Fast chahiye
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:06:01 +0530
+body: 
+Without subject
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:05:47 +0530
+body: 
+Order order oder
+
+-------------------------------
+subject: Orders for the month
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 20:11:04 +0530
+body: 
+4kg mango, 6kg Potato, 7kg Brinjal, 9kg onion
+Debit card payment
+
+-------------------------------
+subject: Weekly orders
+from: Sourabh Dey <uhddey@gmail.com>
+date: Mon, 10 Jun 2024 10:17:38 +0530
+body: 
+I need one kg of potato, 2 kg of mangoes, 6 kg of bananas, 7kg of Lemon
+Will do cash on delivery
+
+-------------------------------
+subject: Barir Order korbo
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:07:10 +0530
+body: 
+Amake 5 kilo aam, 6 kilo Apple, 7 kilo Aalo lagbe aar ami Taka die debo
+
+-------------------------------
+subject: Ghar ke samagri
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:05:33 +0530
+body: 
+Mujhe 1kg Gajar, 2kg Muli chahiye, mai Card payment krunga
+
+-------------------------------
+subject: Ghar ka order
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:04:39 +0530
+body: 
+Mujhe 3kg pyaaz, 5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela chahiye or
+mai CASH payment krunga
+
+-------------------------------
+subject: 
+from: Sourabh Dey <uhddey@gmail.com>
+date: Wed, 22 Nov 2023 11:10:54 +0530
+body: 
+Hi bro
+
+-------------------------------
+subject: Orders for Onion and Apple
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:02:58 +0530
+body: 
+I need 4kg apple, 3kg onion, 5kg Mangoes and I will do the payment through
+Credit card, or Debit card, whichever you prefer
+
+-------------------------------
+subject: Orders for me
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 20:01:17 +0530
+body: 
+3kg onion, 4kg Onion, 6kg Apple, 20kg mango
+Credit card
+
+-------------------------------
+subject: Demo message
+from: Sourabh Dey <souravdeyuhd@gmail.com>
+date: Sun, 9 Jun 2024 16:49:48 +0530
+body: 
+This is an example order
+4kg Onion
+5Kg Potato
+1kg Daal
+CASH ON DELIVERY
+Fast chahiye
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:06:01 +0530
+body: 
+Without subject
+
+-------------------------------
+subject: 
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 22:05:47 +0530
+body: 
+Order order oder
+
+-------------------------------
+subject: Orders for the month
+from: Sourabh Dey <deysourabh8981@gmail.com>
+date: Sun, 9 Jun 2024 20:11:04 +0530
+body: 
+4kg mango, 6kg Potato, 7kg Brinjal, 9kg onion
+Debit card payment
+
+-------------------------------
+subject: Weekly orders
+from: Sourabh Dey <uhddey@gmail.com>
+date: Mon, 10 Jun 2024 10:17:38 +0530
+body: 
+I need one kg of potato, 2 kg of mangoes, 6 kg of bananas, 7kg of Lemon
+Will do cash on delivery
+
+-------------------------------
+subject: Barir Order korbo
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:07:10 +0530
+body: 
+Amake 5 kilo aam, 6 kilo Apple, 7 kilo Aalo lagbe aar ami Taka die debo
+
+-------------------------------
+subject: Ghar ke samagri
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:05:33 +0530
+body: 
+Mujhe 1kg Gajar, 2kg Muli chahiye, mai Card payment krunga
+
+-------------------------------
+subject: Ghar ka order
+from: Sourabh Dey <uhddey@gmail.com>
+date: Sun, 9 Jun 2024 20:04:39 +0530
+body: 
+Mujhe 3kg pyaaz, 5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela chahiye or
+mai CASH payment krunga
+
+-------------------------------
+subject: 
+from: Sourabh Dey <uhddey@gmail.com>
+date: Wed, 22 Nov 2023 11:10:54 +0530
+body: 
+Hi bro
+
+-------------------------------
