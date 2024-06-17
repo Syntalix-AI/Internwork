@@ -1,0 +1,65 @@
+[
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "20:01:17",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "souravdeyuhd@gmail.com",
+        "Order_with_Quantity": "[3kg onion",
+        "mode_of_payment": "4kg Onion, 6kg Apple, 20kg mango], [Credit card]"
+    },
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "16:49:48",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "souravdeyuhd@gmail.com",
+        "Order_with_Quantity": "[4kg Onion",
+        "mode_of_payment": "5Kg Potato, 1kg Daal], [CASH ON DELIVERY]"
+    },
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "20:11:04",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "deysourabh8981@gmail.com",
+        "Order_with_Quantity": "[4kg mango",
+        "mode_of_payment": "6kg Potato, 7kg Brinjal, 9kg onion], [Debit card payment]"
+    },
+    {
+        "week_day": "Monday",
+        "date": "10 Jun 2024",
+        "time_of_order": "10:17:38",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "uhddey@gmail.com",
+        "Order_with_Quantity": "[one kg of potato",
+        "mode_of_payment": "2 kg of mangoes, 6 kg of bananas, 7kg of Lemon], [cash on delivery]"
+    },
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "20:07:10",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "uhddey@gmail.com",
+        "Order_with_Quantity": "[5 kilo aam",
+        "mode_of_payment": "6 kilo Apple, 7 kilo Aalo], [Cash]"
+    },
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "20:05:33",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "uhddey@gmail.com",
+        "Order_with_Quantity": "[1kg Gajar",
+        "mode_of_payment": "2kg Muli], [Card payment]"
+    },
+    {
+        "week_day": "Sunday",
+        "date": "9 Jun 2024",
+        "time_of_order": "20:04:39",
+        "Sender_Name": "Sourabh Dey",
+        "Sender_Email": "uhddey@gmail.com",
+        "Order_with_Quantity": "[3kg pyaaz",
+        "mode_of_payment": "5 kilo Aalu, Adhaa kilo Lehsun or 1 dozen Kela], [CASH payment]"
+    }
+]
