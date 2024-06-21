@@ -1,0 +1,170 @@
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+import os
+
+def init_params(input_size, hidden1_size, hidden2_size, output_size):
+    np.random.seed(1)
+    
+    W1 = np.random.randn(hidden1_size, input_size) * 0.01
+    b1 = np.zeros((hidden1_size, 1))
+    
+    W2 = np.random.randn(hidden2_size, hidden1_size) * 0.01
+    b2 = np.zeros((hidden2_size, 1))
+    
+    W3 = np.random.randn(output_size, hidden2_size) * 0.01
+    b3 = np.zeros((output_size, 1))
+    
+    return W1, b1, W2, b2, W3, b3
+
+def ReLU(Z):
+    return np.maximum(0, Z)
+
+def Deriv_ReLU(Z):
+    return Z > 0
+
+def Tanh(Z):
+    return np.tanh(Z)
+
+def Deriv_Tanh(Z):
+    return 1 - np.tanh(Z)**2
+
+def Softmax(Z):
+    exp_Z = np.exp(Z - np.max(Z, axis=0, keepdims=True))
+    return exp_Z / np.sum(exp_Z, axis=0, keepdims=True)
+
+def forward_prop(W1, b1, W2, b2, W3, b3, X):
+    Z1 = np.dot(W1, X) + b1
+    A1 = ReLU(Z1)
+    
+    Z2 = np.dot(W2, A1) + b2
+    A2 = Tanh(Z2)
+    
+    Z3 = np.dot(W3, A2) + b3
+    A3 = Softmax(Z3)
+    
+    return Z1, A1, Z2, A2, Z3, A3
+
+def One_hot(Y, num_classes):
+    Y_vec = np.zeros((num_classes, Y.size))
+    Y_vec[Y, np.arange(Y.size)] = 1
+    return Y_vec
+
+def back_prop(Z1, A1, W2, Z2, A2, W3, Z3, A3, X, Y):
+    m = Y.size
+    num_classes = A3.shape[0]
+    Y_hot = One_hot(Y, num_classes)
+    
+    dZ3 = A3 - Y_hot
+    dW3 = 1 / m * np.dot(dZ3, A2.T)
+    db3 = 1 / m * np.sum(dZ3, axis=1, keepdims=True)
+    
+    dZ2 = np.dot(W3.T, dZ3) * Deriv_Tanh(Z2)
+    dW2 = 1 / m * np.dot(dZ2, A1.T)
+    db2 = 1 / m * np.sum(dZ2, axis=1, keepdims=True)
+    
+    dZ1 = np.dot(W2.T, dZ2) * Deriv_ReLU(Z1)
+    dW1 = 1 / m * np.dot(dZ1, X.T)
+    db1 = 1 / m * np.sum(dZ1, axis=1, keepdims=True)
+    
+    return db1, dW1, db2, dW2, db3, dW3
+
+def update_params(W1, b1, W2, b2, W3, b3, db1, dW1, db2, dW2, db3, dW3, alpha):
+    W1 -= alpha * dW1
+    b1 -= alpha * db1
+    
+    W2 -= alpha * dW2
+    b2 -= alpha * db2
+    
+    W3 -= alpha * dW3
+    b3 -= alpha * db3
+    
+    return W1, b1, W2, b2, W3, b3
+
+def get_predictions(A):
+    return np.argmax(A, axis=0)
+
+def get_accuracy(predictions, Y):
+    return np.sum(predictions == Y) / Y.size
+
+def Train(X, Y, input_size, hidden1_size, hidden2_size, output_size, n, alpha):
+    W1, b1, W2, b2, W3, b3 = init_params(input_size, hidden1_size, hidden2_size, output_size)
+    for i in range(1, n + 1):
+        Z1, A1, Z2, A2, Z3, A3 = forward_prop(W1, b1, W2, b2, W3, b3, X)
+        db1, dW1, db2, dW2, db3, dW3 = back_prop(Z1, A1, W2, Z2, A2, W3, Z3, A3, X, Y)
+        W1, b1, W2, b2, W3, b3 = update_params(W1, b1, W2, b2, W3, b3, db1, dW1, db2, dW2, db3, dW3, alpha)
+        
+        if i % 20 == 0:
+            predictions = get_predictions(A3)
+            accuracy = get_accuracy(predictions, Y) * 100
+            print(f"Iteration: {i}, Accuracy: {accuracy:.4f}")
+    
+    return W1, b1, W2, b2, W3, b3
+
+def save_params(W1, b1, W2, b2, W3, b3, folder_path='params'):
+    np.savetxt(os.path.join(folder_path, 'W1.txt'), W1)
+    np.savetxt(os.path.join(folder_path, 'b1.txt'), b1)
+    np.savetxt(os.path.join(folder_path, 'W2.txt'), W2)
+    np.savetxt(os.path.join(folder_path, 'b2.txt'), b2)
+    np.savetxt(os.path.join(folder_path, 'W3.txt'), W3)
+    np.savetxt(os.path.join(folder_path, 'b3.txt'), b3)
+
+def load_params(folder_path='params'):
+    W1 = np.loadtxt(os.path.join(folder_path, 'W1.txt'))
+    b1 = np.loadtxt(os.path.join(folder_path, 'b1.txt'))
+    W2 = np.loadtxt(os.path.join(folder_path, 'W2.txt'))
+    b2 = np.loadtxt(os.path.join(folder_path, 'b2.txt'))
+    W3 = np.loadtxt(os.path.join(folder_path, 'W3.txt'))
+    b3 = np.loadtxt(os.path.join(folder_path, 'b3.txt'))
+    
+    b1 = b1.reshape(W1.shape[0], 1)
+    b2 = b2.reshape(W2.shape[0], 1)
+    b3 = b3.reshape(W3.shape[0], 1)
+    
+    return W1, b1, W2, b2, W3, b3
+
+def make_predictions(X, W1, b1, W2, b2, W3, b3):
+    _, _, _, _, _, A = forward_prop(W1, b1, W2, b2, W3, b3, X)
+    return get_predictions(A)
+
+def test_prediction(X, Y, W1, b1, W2, b2, W3, b3):
+    c = 0
+    for i in range(1000):
+        img = X[:, i, None]
+        prediction = make_predictions(img, W1, b1, W2, b2, W3, b3)
+        label = Y[i]
+        if(prediction[0] != label):
+            c += 1
+            print(f"Prediction {c}: {prediction[0]}, Label: {label}")
+            img = img.reshape((28, 28)) * 255
+            plt.gray()
+            plt.imshow(img, interpolation = 'nearest')
+            plt.savefig(os.path.join('mismatch', f'pic{c}.png'))
+            plt.close()
+    return c
+
+
+data = np.array(pd.read_csv('data.csv'))
+m, n = data.shape
+np.random.shuffle(data)
+
+data_test = data[0:1000].T
+Y_test = data_test[0]
+X_test = data_test[1:n] / 255.0
+
+data_train = data[1000:m].T
+Y_train = data_train[0]
+X_train = data_train[1:n] / 255.0
+input_size = 784
+hidden1_size = 128
+hidden2_size = 64
+output_size = 10
+
+W1, b1, W2, b2, W3, b3 = Train(X_train, Y_train, input_size, hidden1_size, hidden2_size, output_size, 500, 0.5)
+save_params(W1, b1, W2, b2, W3, b3)
+
+W1, b1, W2, b2, W3, b3 = load_params()
+accuracy = (1000 - test_prediction(X_test, Y_test, W1, b1, W2, b2, W3, b3)) / 10
+print("Predict Accuracy : ", accuracy)
+
+#96.67
