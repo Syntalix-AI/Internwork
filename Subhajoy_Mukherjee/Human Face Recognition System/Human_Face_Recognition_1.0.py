@@ -17,7 +17,7 @@ Images=[]
 Unique_ID=[]
 training_face_encoding=[]
 #This is the existing image dataset Path Link
-Dataset_path='C:/Users/subha/Documents/GitHub/Internwork/Subhajoy_Mukherjee/Human Face Recognition System/ImageDataSet'
+Dataset_path='C:/Users/subha/Documents/GitHub/Internwork/Subhajoy_Mukherjee/Human Face Recognition System/ImageDataSetFor_1.0'
 
 #This function will load images frrom the existing dataset into a variable by cv2
 def loading_images(path):
@@ -27,7 +27,15 @@ def loading_images(path):
         currImage=cv2.imread(f'{path}/{i}')
         
         Image_List.append(currImage)
-        return Image_List
+    return Image_List
+
+def alternate_loading(path):
+    count=os.listdir(path)
+    known_image=[]
+    for i in range(len(count)):
+        known_image.append(face_recognition.load_image_file(os.path.join(path,count[i])))
+    return known_image  
+        
         
 
 #This function will load IDs frrom the existing dataset into a variable by cv2
@@ -36,15 +44,18 @@ def loading_IDs(path):
     ID_List=[]
     for i in files:
         ID_List.append(os.path.splitext(i)[0])
-        return ID_List
+    return ID_List
 #This will extract features from each images in the dataset and stored the features in a variable  
 #This fuction parameter is pixels values of in numpy array/List of numpy arrays containing pixel values of images 
 #This will return List of faceencoding of images
 def training_images(Images):     #This will extract features from the Images datasets
         ImageEncodeList=[]
         for i in Images:
-            face_encode=face_recognition.face_encodings(i)[0]    #face_encoding function returns a set of 128 computer-generated measurements from a image from its features. 
-            ImageEncodeList.append(face_encode)
+            face_encode=face_recognition.face_encodings(i)    #face_encoding function returns a set of 128 computer-generated measurements from a image from its features.
+            try:
+                ImageEncodeList.append(face_encode[0])
+            except:
+                ImageEncodeList.append(face_encode)
         return ImageEncodeList
 
 def update_image_dataset(ImageArray):
@@ -62,20 +73,21 @@ def update_image_dataset(ImageArray):
 
 #This  part will take picture from webcam in REALTIME
 
-Images=loading_images(Dataset_path)
+Images=loading_images(Dataset_path)          #USE : loading_images()/alternate_loading() function
 Unique_ID=loading_IDs(Dataset_path)
 
-training_face_encoding=training_images(Images)
+#training_face_encoding=training_images(Images)
 
 cap=cv2.VideoCapture(0)
-cap.set(3,1920)
-cap.set(4,1080)
+cap.set(3,1000)
+cap.set(4,700)
 while (cap.isOpened()):
     success,img=cap.read()  #cap.read() function returns the bool value of is the video read or not and the numpy array of the readed video pixels in a tuple form
-    img=cv2.resize(img,(640,480))  #Resize the video frame to increase the Resolution
+    #img=cv2.resize(img,(640,480))  #Resize the video frame to increase the Resolution
     face_in_frame=face_recognition.face_locations(img)
     #print(face_in_frame)
     #print(type(face_in_frame))
+    training_face_encoding=training_images(Images)
     encode_face_in_frame=face_recognition.face_encodings(img,face_in_frame)
     for i,faceloc in zip(encode_face_in_frame,face_in_frame):
         match=face_recognition.compare_faces(training_face_encoding,i)
@@ -92,17 +104,17 @@ while (cap.isOpened()):
         else:
             region_of_interest=img[top-25:bottom+25,left-25:right+25]
             update_image_dataset(region_of_interest)
-            Images=loading_images(Dataset_path)
+            Images=loading_images(Dataset_path)          #USE : loading_images()/alternate_loading() function
             Unique_ID=loading_IDs(Dataset_path)
             training_face_encoding=training_images(Images)
-            
-     
-    
     cv2.imshow('Human Face Recognition',img)
     
-    cv2.waitKey(1)            
+    cv2.waitKey(1)  
+    if (cv2.waitKey(1) & 0xFF) == ord('q'):  # Press 'q' to exit the loop
+        break          
             
-            
+cap.release()
+cv2.destroyAllWindows()           
         
     
     
