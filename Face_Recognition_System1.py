@@ -3,7 +3,7 @@ import numpy as np
 import face_recognition
 import cv2
 
-Dataset_path = 'C:\\Users\\Pratyusha Chatterjee\\Downloads\\Image Dataset'
+Dataset_path = 'C:\\Users\\subha\\Documents\\GitHub\\Internwork\\Subhajoy_Mukherjee\\Human Face Recognition System\\ImageDataSet'
 next_id = 1  # Initial unique ID counter
 
 Images = []
